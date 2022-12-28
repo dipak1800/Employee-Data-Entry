@@ -1,0 +1,128 @@
+body {
+    margin: 0;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: lightcyan;
+    padding: 0 16px;
+}
+.header___title {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 24px;
+}
+.header__button {
+    padding: 4px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    color: whitesmoke;
+}
+.header__button span {
+    margin-right: 4px;
+    font-size: 16px;
+}
+.header__button:hover {
+    background-color: whitesmoke;
+    color: black;
+    cursor: pointer;
+    transition: all 0.2s linear;
+}
+.employeeData {
+    width: 100%;
+    height: 85vh;
+    display:flex ;
+}
+.employeeName , .employeeInformation{
+    flex-basis: 30%;
+    border: 2px solid black;
+    height: 100%;
+    overflow: auto;
+}
+.employeeInformation {
+    flex-basis: 70%;
+}
+.employeeName__title, .employeeInformation__title {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+    padding: 4px;
+    border-bottom: 1px solid black;
+}
+.employeeName__list--items {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 16px;
+    background-color: #f1f1f1;
+    margin: 8px 0;
+    border-radius: 4px;
+}
+.employeeName__list--items.selected, .employeeName__list--items:hover {
+    background: gray;
+    transition: all 0.2s ease;
+}
+.employeeName__list--name {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+}
+.employeeName__list--actions .fa-user-xmark {
+    color: red;
+    margin-left: 8pX;
+}
+.employeeName__list--actions .fa-user-xmark, .fa-user-pen {
+    cursor: pointer;
+}
+.addNewEmployeeModal {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+}
+.addNewEmployeeModal.show {
+    display: flex;
+}
+.addNewEmployeeModal__form {
+    min-width: 500px;
+    border: 10px solid lightcyan;
+    background-color: whitesmoke;
+    border-radius: 8px;
+}
+.addNewEmployeeModal__inputfield {
+    width: 100%;
+    padding: 8px 0;
+    text-align: center;
+}
+.addNewEmployeeModal__inputfield input {
+    width: 90%;
+    border: 1px solid black;
+    padding: 8px 16px;
+    border-radius: 8px;
+}
+.addNewEmployeeModal__buttonContainer {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.addNewEmployeeModal__buttonContainer button {
+    padding: 8px 32px;
+    background-color: lightcyan;
+    color: black;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 700;
+    border-radius: 8px;
+    cursor: pointer;
+    margin: 16px 10px 16px 0;
+}

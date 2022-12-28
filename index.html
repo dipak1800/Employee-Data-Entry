@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Data</title>
+    <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header class="header">
+        <h1 class="header___title">Employee Data Management</h1>
+        <button class="header__button"><span>+</span>Add Employee</button>
+    </header>
+    <section class="employeeData">
+        <aside class="employeeName">
+            <div class="employeeName__title">Employee Names</div>
+            <div class="employeeName__list"></div>
+        </aside>
+        <div class="employeeInformation">
+            <div class="employeeInformation__title">Employee Information</div>
+            <div class="employeeInformation__description"></div>
+
+        </div>
+    </section>
+    <div class="addNewEmployeeModal">
+            <form action="#" class="addNewEmployeeModal__form">
+                <div class="addNewEmployeeModal__inputfield">
+                    <input type="text" name="firstName" id="employee_firstName" maxlength="30" required placeholder="Employee First Name">
+                </div>
+                <div class="addNewEmployeeModal__inputfield">
+                    <input type="text" name="lastName" id="employee_lastName" maxlength="30" required placeholder="Employee Last Name">
+                </div>
+                <div class="addNewEmployeeModal__inputfield">
+                    <input type="url" name="image" id="employee_image" placeholder="Employee Image URL">
+                </div>
+                <div class="addNewEmployeeModal__inputfield">
+                    <input type="email" name="email" id="employee_email" required placeholder="Employee Email ID">
+                </div>
+                <div class="addNewEmployeeModal__inputfield">
+                    <input type="tel" name="phoneNumber" id="employee_phoneNumber" maxlength="10" required placeholder="Employee Phone Number">
+                </div>
+                <div class="addNewEmployeeModal__inputfield">
+                    <input type="number" name="salary" id="employee_salary" placeholder="Employee Salary">
+                </div>
+                <div class="addNewEmployeeModal__inputfield">
+                    <input type="number" name="age" id="employee_age" maxlength="2" placeholder="Employee Age">
+                </div>
+                <div class="addNewEmployeeModal__buttonContainer">
+                    <button type="submit">Add Employee</button>
+                </div>
+            </form>
+    </div>
+    <script
+  src="https://code.jquery.com/jquery-3.6.3.min.js"
+  integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU="
+  crossorigin="anonymous"></script>
+  <script src="./scripts/index.js"></script>
+</body>
+</html>
