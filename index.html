@@ -25,27 +25,27 @@
         </div>
     </section>
     <div class="addNewEmployeeModal">
-            <form action="#" class="addNewEmployeeModal__form">
+            <form action="#" id="add_edit_employee_form">
                 <div class="addNewEmployeeModal__inputfield">
-                    <input type="text" name="firstName" id="employee_firstName" maxlength="30" required placeholder="Employee First Name">
+                    <input type="text" name="firstName"  maxlength="30" required placeholder="Employee First Name">
                 </div>
                 <div class="addNewEmployeeModal__inputfield">
-                    <input type="text" name="lastName" id="employee_lastName" maxlength="30" required placeholder="Employee Last Name">
+                    <input type="text" name="lastName"  maxlength="30" required placeholder="Employee Last Name">
                 </div>
                 <div class="addNewEmployeeModal__inputfield">
-                    <input type="url" name="image" id="employee_image" placeholder="Employee Image URL">
+                    <input type="url" name="profile_image" placeholder="Employee Image URL">
                 </div>
                 <div class="addNewEmployeeModal__inputfield">
-                    <input type="email" name="email" id="employee_email" required placeholder="Employee Email ID">
+                    <input type="email" name="employee_email"  required placeholder="Employee Email ID">
                 </div>
                 <div class="addNewEmployeeModal__inputfield">
-                    <input type="tel" name="phoneNumber" id="employee_phoneNumber" maxlength="10" required placeholder="Employee Phone Number">
+                    <input type="number" name="employee_phone"  maxlength="10" required placeholder="Employee Phone Number">
                 </div>
                 <div class="addNewEmployeeModal__inputfield">
-                    <input type="number" name="salary" id="employee_salary" placeholder="Employee Salary">
+                    <input type="tel" name="employee_salary"  placeholder="Employee Salary" required>
                 </div>
                 <div class="addNewEmployeeModal__inputfield">
-                    <input type="number" name="age" id="employee_age" maxlength="2" placeholder="Employee Age">
+                    <input type="tel" name="employee_age" maxlength="2" placeholder="Employee Age" maxlength="2" min="18" required>
                 </div>
                 <div class="addNewEmployeeModal__buttonContainer">
                     <button type="submit">Add Employee</button>
